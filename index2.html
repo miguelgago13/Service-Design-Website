@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content = "with=device-width, initial-scale=1.0">
+        <title>Waka Waka</title>
+        <link rel="stylesheet" href="style2.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index2.html"><img src="wakawaka.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="#course">ABOUT</a></li>
+                        <li><a href="#facilities">ACTIVITIES</a></li>
+                        <li><a href="#testimonials">REVIEWS</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()""></i>
+            </nav>
+        </section>
+        <section class="text-box">
+            <h1>💃WAKA WAKA💃</h1>
+            <p>Enjoy your retirement.</p>
+            <h3>CALL US:</h3>
+            <h1 id="phone-number">999 999 999</h1>
+            <img src="wakawakalight.png">
+        </section>
+        <!------Course-------->
+        <section class="course" id="course">
+            <h1>What do we offer?</h1>
+            <p>We organize activities for our community.</p>
+            <div class="row">
+                <div class="course-col">
+                    <h3>Transport</h3>
+                    <p>Don't worry about where the activity is. We take you there and bring you back home.</p>
+                </div>
+                <div class="course-col">
+                    <h3>Assistance</h3>
+                    <p>Mobility difficulties? Our assistants will help you avoid that problem.</p>
+                </div>
+                <div class="course-col">
+                    <h3>Socialize</h3>
+                    <p>You will not feel alone, that's sure! Our communnity will make you company.</p>
+                </div>
+            </div>
+        
+        </section>
+        
+        <!------Facilities------>
+        <section class="facilities" id="facilities">
+            <h1>Scheduled Activities</h1>
+            <p>Every week we inform you of the activities that will happen.</p>
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="teatro.jpg">
+                    <h3>Theatre</h3>
+                    <p><b>Place:</b> Teatro da Trindade, Lisbon</p>
+                    <p><b>Piece:</b> "Hamlet", Shakespeare</p>
+                    <p><b>Date:</b> 1st April 2024</p>
+                    <p><b>Activity time:</b> 19h00 - 21h30</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="luz.jpg">
+                    <h3>Football Game</h3>
+                    <p><b>Place:</b> Estádio da Luz, Lisbon</p>
+                    <p><b>Match:</b> SL Benfica - Sporting CP</p>
+                    <p><b>Date:</b> 2nd April 2024</p>
+                    <p><b>Activity time:</b> 17h00 - 20h00</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="quinta.jpg">
+                    <h3>Picnic</h3>
+                    <p><b>Place:</b> Quinta das Conchas, Lisbon</p>
+                    <p><b>Date:</b> 3rd April 2024</p>
+                    <p><b>Activity time:</b> 12h00 - 14h00</p>
+                    <p></p>
+                </div>                                
+            </div>
+        </section>
+
+        <!-----testemunhas------>
+        <section class="testemonials" id="testimonials">
+            <h1>Costumer Reviews</h1>
+            <p>Real reviews from some of our costumers.</p>
+            <div class="row">
+                <div class="testimonial-col">
+                    <img src="isabel.png">
+                    <div>
+                        <p>It's amazing the ammount of friends I made while participating in the incredible events. Everyone is great! Every week they talk with us in order to know what we would like to do. It is a big family!
+                        </p>
+                        <h3>Isabel Costa</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-col">
+                    <img src="sofia.png">
+                    <div>
+                        <p>I love this community. All the activities I participated on were really well organized. I want to give a special thank you to the assistants!
+                        </p>
+                        <h3>Sofia Mendes</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-------Call To Action------>
+        <section class="cta">
+            <h1>Be part of Waka Waka community.<br>Be one of us.</h1>
+            <a href="" class="hero-btn">CONTACT US</a>
+        </section>
+
+        <!------rodape------>
+        <section class="footer">
+            <h4>About us</h4>
+            <p>We are here to help you make use of your free time.<br> Together!</p>
+            <div class="icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+            
+            <p>Service Design 2023/2024</p>
+        </section>
+        <!-------JavaScript para mostrar menu no telemovel-------->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+        
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+        
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        
+            // Smooth scroll function
+            function scrollToSection(sectionId) {
+                var section = document.getElementById(sectionId);
+                if (section) {
+                    window.scrollTo({
+                        top: section.offsetTop - 60,
+                        behavior: "smooth"
+                    });
+                }
+            }
+        
+            // Add an event listener for each navigation link
+            var navigationLinks = document.querySelectorAll('.nav-links ul li a');
+            navigationLinks.forEach(function(link) {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    var sectionId = link.getAttribute('href').substring(1); // Remove the # from the href
+                    scrollToSection(sectionId);
+                });
+            });
+        </script>
+    </body>
+</html>
